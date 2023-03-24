@@ -3,6 +3,21 @@ The following is a list of examples of the kinds of vulnerabilities that we’re
 most interested in. It is not exhaustive: there are other kinds of issues we may
 also be interested in!
 
+### Generally
+
+* memory allocation bugs
+* race conditions
+* timing attacks
+* information leaks
+* authentication bypasses
+* incorrect block validation
+* lost-write bugs
+* unauthorized account or capability access
+* stolen funds
+* token inflation bugs
+* payloads/transactions that cause panics
+* vulnerabilities that highlight clusters where more than ⅓ of the nodes may become faulty or malicious
+
 ### Specifications
 
 * Conceptual flaws
@@ -33,7 +48,7 @@ Assuming more than 1/3 the voting power is Byzantine:
 * Eclipse attacks
 * Sybil attacks
 * Long-range attacks
-* Denial-of-Service
+* Denial-of-Service of the protocol layer
 * Network channel attacks
 
 ### RPC
