@@ -42,6 +42,6 @@ If you follow these guidelines when reporting an issue to us, we commit to:
 * Work with you to understand, resolve and ultimately disclose the issue in a timely fashion
 
 ### More information
-* See [TIMELINE.md](https://github.com/cosmos/security/TIMELINE.md) for an example timeline of a disclosure.
-* See [DISCLOSURE.md](https://github.com/cosmos/security/DISCLOSURE.md) to see more into the inner workings of the disclosure process.
-* See [EXAMPLES.md](https://github.com/cosmos/security/EXAMPLES.md) for some of the examples that we are interested in for the bug bounty program.
+* See [TIMELINE.md](https://github.com/cosmos/security/blob/main/TIMELINE.md) for an example timeline of a disclosure.
+* See [DISCLOSURE.md](https://github.com/cosmos/security/blob/main/DISCLOSURE.md) to see more into the inner workings of the disclosure process.
+* See [EXAMPLES.md](https://github.com/cosmos/security/blob/main/EXAMPLES.md) for some of the examples that we are interested in for the bug bounty program.
