@@ -72,7 +72,7 @@ If you follow these guidelines when reporting an issue to us, we commit to:
 * See [EXAMPLES.md] for some of the examples that we are interested in for the
   bug bounty program.
 
-[gh-private-advisory]: /security/advisories/new
+[gh-private-advisory]: /../../security/advisories/new
 [h1]: https://hackerone.com/cosmos
 [TIMELINE.md]: https://github.com/cosmos/security/blob/main/TIMELINE.md
 [DISCLOSURE.md]: https://github.com/cosmos/security/blob/main/DISCLOSURE.md
