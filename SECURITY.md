@@ -23,14 +23,10 @@ the vulnerability can be reproduced on either one of those.
 
 | Reporting methods                                             |
 |---------------------------------------------------------------|
-| [GitHub Private Vulnerability Reporting][gh-private-advisory] |
+| [security@interchain.io](mailto:security@interchain.io)       |
 
-All security vulnerabilities can be reported under GitHub's [Private
-vulnerability reporting][gh-private-advisory] system. This will open a private
-issue for the developers. Try to fill in as much of the questions as possible.
-If you are not familiar with the CVSS system for assessing vulnerabilities, just
-use the Low/High/Critical severity ratings. A partially filled in report for a
-critical vulnerability is still better than no report at all.
+Please send your report via email to [security@interchain.io](mailto:security@interchain.io) with
+reproduction steps and details of the issue.
 
 ### Guidelines
 
@@ -62,8 +58,6 @@ If you follow these guidelines when reporting an issue to us, we commit to:
 * See [EXAMPLES.md] for some of the examples that we are interested in for the
   bug bounty program.
 
-[gh-private-advisory]: /../../security/advisories/new
-[h1]: https://hackerone.com/cosmos
 [TIMELINE.md]: https://github.com/cosmos/security/blob/main/TIMELINE.md
 [DISCLOSURE.md]: https://github.com/cosmos/security/blob/main/DISCLOSURE.md
 [EXAMPLES.md]: https://github.com/cosmos/security/blob/main/EXAMPLES.md
