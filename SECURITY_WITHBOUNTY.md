@@ -43,8 +43,7 @@ reproduction steps and details of the issue.
 
 We require that all researchers:
 
-* avoid posting vulnerability information in public places, including GitHub, Discord,
-  Telegram, and Twitter.
+* avoid posting vulnerability information in public places, including public GitHub repositories, public Discords, public Telegram chats, and public Twitter.
 * Make every effort to avoid privacy violations, degradation of user experience,
   disruption to production systems (including but not limited to the Cosmos
   Hub), and destruction of data.
