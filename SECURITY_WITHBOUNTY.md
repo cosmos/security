@@ -36,9 +36,10 @@ reproduction steps and details of the issue.
 ### Guidelines
 
 **We commit to**
-* Not pursue or support any legal action related to your research on this
-  vulnerability
-* Vigorously support security research that is done in a white-hat fashion, where information is shared with the foundation and relevant parties.  
+* Not pursue or support any legal action related to your research on this vulnerability, provided that you're minimizing risk.
+* Vigorously support security research that is done in a white-hat fashion, where information is shared with the foundation and relevant parties in a manner that minimizes risk.
+* Communicating with researchers throughout a disclosure process
+* Allowing researchers to review reports before release
 
 We require that all researchers:
 
