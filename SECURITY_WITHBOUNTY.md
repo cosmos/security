@@ -43,17 +43,13 @@ We require that all researchers:
 * Make every effort to avoid privacy violations, degradation of user experience,
   disruption to production systems (including but not limited to the Cosmos
   Hub), and destruction of data.
-* Keep any information about vulnerabilities that you’ve discovered confidential
-  between yourself and the Cosmos engineering team until the issue has been
-  resolved and disclosed.
+* Keep any information about vulnerabilities limited to only relevant parties. 
 * Avoid posting personally identifiable information, privately or publicly.
 
 If you follow these guidelines when reporting an issue to us, we commit to:
 
 * Not pursue or support any legal action related to your research on this
   vulnerability
-* Work with you to understand, resolve and ultimately disclose the issue in a
-  timely fashion
 
 ### More information
 
