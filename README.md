@@ -1,6 +1,8 @@
 # Security
 
-To report a security issue, please use the project's instructions for reporting a security issue. This repository is a read-only mirror.
+Please check out our Bounty program located at [https://hackerone.com/cosmos](https://hackerone.com/cosmos)!
+
+To report a security issue, please use the corresponding project's instructions for reporting a security issue. This repository is a read-only mirror.
 
 ## Project Templates
 
