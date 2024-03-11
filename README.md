@@ -1,6 +1,6 @@
 # Security
 
-To report a Security issue, please use the supported channels in the [SECURITY_WITHBOUNTY.md](SECURITY_WITHBOUNTY.md) file. This repository is a read-only mirror.
+To report a security issue, please use the project's instructions for reporting a security issue. This repository is a read-only mirror.
 
 ## Project Templates
 
