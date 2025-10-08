@@ -1,4 +1,4 @@
-# Interchain Stack Severity Classification Framework
+# Cosmos Stack Severity Classification Framework
 
 **Version**: ACMv1.2
 
@@ -94,7 +94,7 @@ Investing in mechanisms, including a circuit breaker for specific APIs, may redu
 - High
 
   - Possible likelihood, Considerable impact
-  - Somewhat cross-chain impact, with consequences that are difficult to recover from and likely to require state modification. These consequences could include non-determinism that results in a trivial chain halt or bugs that undermine the economic model of the Interchain Stack.
+  - Somewhat cross-chain impact, with consequences that are difficult to recover from and likely to require state modification. These consequences could include non-determinism that results in a trivial chain halt or bugs that undermine the economic model of the Cosmos Stack.
   - Examples include:
     - [Pigeonfall](https://github.com/cosmos/ibc-apps/security/advisories/GHSA-q7m9-jcqg-g9pq): Packet Forward Middleware
     - [ASA-2024-001](https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-2557-x9mg-76w8): Validation of `VoteExtensionsEnableHeight` can cause chain halt (CometBFT)
@@ -128,13 +128,13 @@ Emergency Security Coordination or Emergency Security Upgrades should be reserve
 
 ## Vulnerability Disclosure and Emergency Security Coordination
 
-If you believe that you have found a vulnerability in the Interchain Stack or would like to contribute to the Cosmos Bug Bounty Program by reporting a bug, please see [https://hackerone.com/cosmos](https://hackerone.com/cosmos). This Severity Classification Framework is used to assess all vulnerabilities reported to the bug bounty program.
+If you believe that you have found a vulnerability in the Cosmos Stack or would like to contribute to the Cosmos Bug Bounty Program by reporting a bug, please see [https://hackerone.com/cosmos](https://hackerone.com/cosmos). This Severity Classification Framework is used to assess all vulnerabilities reported to the bug bounty program.
 
-If you are building on the Interchain Stack and want to ensure that your team is easy to contact in the event that you are impacted by a Critical security vulnerability, create a security contact email alias and include this information in a `security.md` in your main code repository.
+If you are building on the Cosmos Stack and want to ensure that your team is easy to contact in the event that you are impacted by a Critical security vulnerability, create a security contact email alias and include this information in a `security.md` in your main code repository.
 
-If you are interested in receiving security advisories about vulnerabilities discovered in the Interchain Stack, sign up for the security email distribution list [here](https://interchaincirt.org/signup).
+If you are interested in receiving security advisories about vulnerabilities discovered in the Cosmos Stack, sign up for the security email distribution list [here](https://interchaincirt.org/signup).
 
-If you are a chain operator and you want to verify if Emergency Security Coordination for an Interchain Stack component is taking place, please reach out to our official channel by emailing [security@interchain.io](mailto:security@interchain.io). Though our team cannot make public announcements about private security coordination activities, we can privately confirm if any emergency coordination is actively taking place.
+If you are a chain operator and you want to verify if Emergency Security Coordination for an Cosmos Stack component is taking place, please reach out to our official channel by emailing [security@interchain.io](mailto:security@interchain.io). Though our team cannot make public announcements about private security coordination activities, we can privately confirm if any emergency coordination is actively taking place.
 
 ### Changelog
 
