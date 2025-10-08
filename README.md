@@ -1,12 +1,12 @@
 # Cosmos Maintenance and Security
 
-This repository houses references, artifacts, and deliverables from, `/security` (slash security).
+This repository houses references, artifacts, policies and deliverables for maintenance and security of the Cosmos Stack.
 
 ## Programs
 
 ### Maintenance 
 
-
+Cosmos Labs' maintenance policy for the Cosmos Stack is detailed in our attached [policy document](./POLICY.md).
 
 ### Bug Bounty
 
