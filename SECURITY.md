@@ -5,7 +5,7 @@
 Cosmos Labs is committed to the security of the Cosmos Stack and
 encourages responsible disclosure of vulnerabilities. We operate a bug
 bounty program to reward security researchers for discovering and
-reporting issues.\
+reporting issues.
 This policy outlines how to report vulnerabilities, how our bug bounty
 program works, and our approach to patching and disclosing security
 issues.
@@ -14,13 +14,13 @@ issues.
 
 ## Reporting a Vulnerability
 
-**Private Disclosure:**\
+**Private Disclosure:**
 If you discover a potential security vulnerability in Cosmos (e.g.,
 Cosmos SDK, CometBFT, IBC, or related core components), report it
 privately through our official channels.
 
 -   **Preferred method:** Report via the [Cosmos HackerOne Bug Bounty
-    Program](https://hackerone.com/cosmos).\
+    Program](https://hackerone.com/cosmos).
 -   If unable to use HackerOne, you may email: `security@cosmoslabs.io`
     with the vulnerability details (steps to reproduce, impact, etc.).
 
@@ -28,11 +28,11 @@ privately through our official channels.
 
 When reporting, **do not publicize the issue** (e.g., no public GitHub
 issues or social posts) until we have addressed it and granted
-permission to disclose.\
+permission to disclose.
 We may coordinate with you on a public disclosure timeline.
 
 By reporting to us, you agree to **participate in coordinated
-vulnerability disclosure** --- allowing us time to develop and
+vulnerability disclosure**, allowing us time to develop and
 distribute a fix before details are made public.
 
 ------------------------------------------------------------------------
@@ -75,12 +75,12 @@ urgency and disclosure timelines.
 
 ## Silent Patch and Disclosure Process
 
-Cosmos adopts a **silent patch** approach --- vulnerabilities are fixed
-quietly before disclosure.\
+Cosmos will adopt a **silent patch** approach. Vulnerabilities are fixed
+quietly before disclosure.
 This mirrors practices from projects like **Ethereum's Geth**, **Bitcoin
 Core**, and **Zcash**.
 
-**Why:**\
+**Why:**
 Announcing vulnerabilities too early can endanger unpatched nodes.
 Silent fixes allow time for safe upgrades before attackers become aware.
 
@@ -125,7 +125,7 @@ Once the embargo period expires, a **Security Advisory** is published
 description - Affected versions - Severity - Fix steps - Reporter credit
 (unless anonymity requested)
 
-Historical advisories remain publicly available.\
+Historical advisories remain publicly available.
 This **delayed transparency model** balances immediate safety with
 long-term openness and trust.
 
