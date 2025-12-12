@@ -61,12 +61,12 @@ documents.
 
 All reported vulnerabilities are assigned a severity category guiding how they are handled and disclosed.
 
-| **Level**    | **Description**                                                                                           | **Examples**                                            |
-|--------------|-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| **Critical** | Bugs posing an existential or network-wide threat (chain halts, consensus failures, inflation, or theft). | Token creation beyond fixed supply, permanent fork bug. |
-| **High**     | Major disruption to many nodes or users, often remotely exploitable.                                      | Remote crash or chain halt vulnerability.               |
-| **Medium**   | Moderate impact or harder to exploit; may require specific configurations.                                | Slow block propagation, limited DoS.                    |
-| **Low**      | Minor impact or impractical exploitation.                                                                 | Benign input causing small performance issue.           |
+| **Level**    | **Description**                                                                     | **Examples**                                            |
+|--------------|-------------------------------------------------------------------------------------|---------------------------------------------------------|
+| **Critical** | Bugs posing an existential or network-wide threat (fund loss, inflation, or theft). | Token creation beyond fixed supply, permanent fork bug. |
+| **High**     | Major disruption to many nodes or users, often remotely exploitable.                | Remote crash or chain halt vulnerability.               |
+| **Medium**   | Moderate impact or harder to exploit; may require specific configurations.          | Node halt requiring high permissions and access         |
+| **Low**      | Minor impact or impractical exploitation.                                           | Slow block propagation, limited DoS.                    |
 
 These levels align with common security practices and determine both
 urgency and disclosure timelines. For more information, refer to our [Classification Matrix](./resources/CLASSIFICATION_MATRIX.md).
