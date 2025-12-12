@@ -43,11 +43,11 @@ Our bug bounty program rewards valid security bug reports submitted
 through **HackerOne**, where bounty amounts depend on severity and
 impact.
 
-**Scope:** Core Cosmos Stack components, such as: Cosmos SDK, CometBFT consensus engine, IBC, Cosmos EVM and
+**Scope:** Core Cosmos Stack components, such as: Cosmos SDK, CometBFT, IBC, Cosmos EVM and
 other critical infrastructure
 
 For full scope, severity definitions, and reward ranges, see the Cosmos
-page on HackerOne.
+page on [HackerOne](https://hackerone.com/cosmos).
 
 We follow a **Safe Harbor** policy to protect researchers acting in good
 faith. The official HackerOne page contains the **Coordinated
@@ -69,13 +69,13 @@ All reported vulnerabilities are assigned a severity category guiding how they a
 | **Low**      | Minor impact or impractical exploitation.                                                                 | Benign input causing small performance issue.           |
 
 These levels align with common security practices and determine both
-urgency and disclosure timelines.
+urgency and disclosure timelines. For more information, refer to our [Classification Matrix](./resources/CLASSIFICATION_MATRIX.md).
 
 ------------------------------------------------------------------------
 
 ## Silent Patch and Disclosure Process
 
-Cosmos will adopt a **silent patch** approach. Vulnerabilities are fixed
+Cosmos adopts a **silent patch** approach. Vulnerabilities are fixed
 quietly before disclosure.
 This mirrors practices from projects like **Ethereum's Geth**, **Bitcoin
 Core**, and **Zcash**.
