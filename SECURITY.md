@@ -80,7 +80,6 @@ quietly before disclosure.
 This mirrors practices from projects like **Ethereum's Geth**, **Bitcoin
 Core**, and **Zcash**.
 
-**Why:**
 Announcing vulnerabilities too early can endanger unpatched nodes.
 Silent fixes allow time for safe upgrades before attackers become aware.
 
@@ -101,20 +100,8 @@ Silent fixes allow time for safe upgrades before attackers become aware.
 | **Severity**     | **Disclosure Timing**                                                      | **Details**                                                                             |
 |------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | **Low / Medium** | ~4 weeks after public fix release                                          | Publish full advisory with impact and fix details.                                      |
-| **High**         | After the affected version reaches **End-of-Life (EOL)** (~1 year typical) | Mirrors Bitcoin Core's delayed high-severity policy.                                    |
+| **High**         | After the affected version reaches **End-of-Life (EOL)** (~1 year typical) | Delayed high-severity policy ensures attackers are not aware of exploits.               |
 | **Critical**     | **Ad-hoc** (case-by-case)                                                  | Disclose only when safe; may delay or omit full details to prevent future exploitation. |
-
-  ------------------------------------------------------------------------
-
-### Advance Notice
-
-Before disclosing, Cosmos issues a **pre-announcement**, e.g.:
-
-> "Upcoming security disclosure: vulnerabilities fixed in Cosmos SDK
-> vX.Y.Z will be publicly disclosed on \[Date\]. Please ensure you have
-> upgraded."
-
-This alerts operators while maintaining security during the embargo.
 
 ------------------------------------------------------------------------
 
