@@ -60,23 +60,4 @@ Upon introduction of this family, support for the older *(0.50.x / IBC v8.x)* fa
 
 ## Security Fix Process
 
-Cosmos Labs operates a bug bounty program on [HackerOne](https://www.hackerone.com/). We encourage responsible disclosure of vulnerabilities within the supported release families.
-
-For bugs in working branches or in future releases, we encourage developers to share as early and often as possible so we can build a safer, more secure Stack.
-
-The security fix process is being refined to provide better and more predictable service to developers and users. Changes are being introduced to improve transparency and response times across different issue severities:
-
-- **Low and Medium severity:** Fixes will be developed publicly and included in a scheduled Patch Day release.
-- **High severity:** Fixes will be developed privately and included in a scheduled Patch Day release.
-- **Critical severity (e.g., fund loss):** Fixes will be developed privately and deployed immediately, outside the Patch Day cycle.
-
----
-
-## Patch Day
-
-**Patch Day** is a scheduled release event for security and stability fixes.
-
-- Occurs on the **second Tuesday of each month**.
-- A **5-day advance notice** will be provided detailing the packages affected and the nature of the fixes.
-
-This ensures stakeholders can prepare, test, and deploy updates in a timely manner.
+Please read our [security policy](./SECURITY.md) for a detailed breakdown of how bugs and vulnerabilities are to be handled for the Cosmos Stack.
