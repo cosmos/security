@@ -101,6 +101,13 @@ basis. When an issue presents an immediate or network-wide risk, Cosmos
 Labs may initiate emergency mitigations, private fix distribution, or
 coordinated upgrades before any public disclosure occurs.
 
+If Cosmos Labs determines that a vulnerability with **network-wide
+impact** (such as a chain halt or consensus failure) is already being
+actively exploited, or that attacker awareness is confirmed prior to a
+scheduled release, the issue is escalated and handled as **Critical** for
+response and disclosure purposes, regardless of its original
+classification.
+
 ### Fix Distribution
 
 - Fixes are delivered through patch or minor releases.
@@ -111,11 +118,11 @@ coordinated upgrades before any public disclosure occurs.
 
 ### Disclosure Timeline
 
-| **Severity**     | **Disclosure Timing**                                                      | **Details**                                                                             |
-|------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Low / Medium** | Approximately four weeks after public release of the fix                  | Full advisory published with impact and remediation details.                            |
-| **High**         | After the affected version reaches **End-of-Life (EOL)** (~1 year typical) | Disclosure delayed to reduce exploitation risk.                                         |
-| **Critical**     | Case-by-case                                                                | Disclosure only when deemed safe; details may be limited or withheld.                   |
+| **Severity**     | **Disclosure Timing**                                                      | **Details**                                                           |
+|------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **Low / Medium** | Approximately four weeks after public release of the fix                   | Full advisory published with impact and remediation details.          |
+| **High**         | After the affected version reaches **End-of-Life (EOL)** (~1 year typical) | Disclosure delayed to reduce exploitation risk.                       |
+| **Critical**     | Case-by-case (At minimum after EOL)                                        | Disclosure only when deemed safe; details may be limited or withheld. |
 
 ------------------------------------------------------------------------
 
