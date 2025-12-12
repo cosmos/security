@@ -67,12 +67,12 @@ Vulnerability Disclosure Policy** and **Safe Harbor terms**.
 Reported vulnerabilities are assigned a severity classification that
 determines handling priority and disclosure timing.
 
-| **Level**    | **Description**                                                                     | **Examples**                                            |
-|--------------|-------------------------------------------------------------------------------------|---------------------------------------------------------|
-| **Critical** | Network-wide or existential threats, including fund loss, inflation, or theft.     | Unlimited token minting, permanent consensus failure.   |
-| **High**     | Severe impact affecting many nodes or users; often remotely exploitable.            | Remote crash or chain halt vulnerabilities.             |
-| **Medium**   | Limited or conditional impact; exploitation may require specific conditions.        | Node halt requiring elevated permissions.               |
-| **Low**      | Minor impact or impractical exploitation scenarios.                                 | Slow block propagation, limited denial-of-service.      |
+| **Level**    | **Description**                                                              | **Examples**                                                                            |
+|--------------|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| **Critical** | Permanent and irrecoverable loss of fund                                     | Direct fund loss, unauthorized and unlimited token minting, irreversible theft of fund. |
+| **High**     | Severe impact affecting many nodes or users; often remotely exploitable.     | Remote crash or chain halt vulnerabilities.                                             |
+| **Medium**   | Limited or conditional impact; exploitation may require specific conditions. | Node halt requiring elevated permissions.                                               |
+| **Low**      | Minor impact or impractical exploitation scenarios.                          | Slow block propagation, limited denial-of-service.                                      |
 
 These classifications follow industry standards and inform response
 urgency and disclosure policy. Additional details are available in the
