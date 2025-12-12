@@ -82,14 +82,24 @@ urgency and disclosure policy. Additional details are available in the
 
 ## Silent Patch and Disclosure Process
 
-Cosmos Labs follows a **silent patch** model for security vulnerabilities.
-Issues are addressed privately and remediated prior to public
-disclosure. This approach is consistent with established practices used
-by projects such as **Ethereum Geth**, **Bitcoin Core**, and **Zcash**.
+Cosmos Labs follows a **silent patch** model for most security
+vulnerabilities. Issues are addressed privately and remediated prior to
+public disclosure.
+
+This approach aligns with practices
+used by other major protocols, such as **Ethereum's Geth** (see
+https://geth.ethereum.org/docs/developers/geth-developer/disclosures),
+**Bitcoin Core** (see https://bitcoincore.org/en/security-advisories/),
+and **Zcash** (see https://z.cash/technology/security-advisories/).
 
 Premature disclosure can place unpatched networks at risk. Silent
 remediation allows operators time to upgrade before vulnerability
 details become public.
+
+Vulnerabilities classified as **Critical** are handled on a case-by-case
+basis. When an issue presents an immediate or network-wide risk, Cosmos
+Labs may initiate emergency mitigations, private fix distribution, or
+coordinated upgrades before any public disclosure occurs.
 
 ### Fix Distribution
 
