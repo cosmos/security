@@ -98,7 +98,7 @@ details become public.
 
 Vulnerabilities classified as **Critical** are handled on a case-by-case
 basis. When an issue presents an immediate or network-wide risk, Cosmos
-Labs may initiate emergency mitigations, private fix distribution, or
+Labs will initiate emergency mitigations, private fix distribution, or
 coordinated upgrades before any public disclosure occurs.
 
 If Cosmos Labs determines that a vulnerability with **network-wide
