@@ -134,7 +134,7 @@ If you are building on the Cosmos Stack and want to ensure that your team is eas
 
 If you are interested in receiving security advisories about vulnerabilities discovered in the Cosmos Stack, sign up for the security email distribution list [here](https://interchaincirt.org/signup).
 
-If you are a chain operator and you want to verify if Emergency Security Coordination for an Cosmos Stack component is taking place, please reach out to our official channel by emailing [security@interchain.io](mailto:security@interchain.io). Though our team cannot make public announcements about private security coordination activities, we can privately confirm if any emergency coordination is actively taking place.
+If you are a chain operator and you want to verify if Emergency Security Coordination for an Cosmos Stack component is taking place, please reach out to our official channel by emailing [security@cosmoslabs.io](mailto:security@cosmoslabs.io). Though our team cannot make public announcements about private security coordination activities, we can privately confirm if any emergency coordination is actively taking place.
 
 ### Changelog
 
