@@ -4,9 +4,12 @@ This repository houses references, artifacts, policies and deliverables for main
 
 ## Programs
 
-### Maintenance 
+### Maintenance
 
-Cosmos Labs' maintenance policy for the Cosmos Stack is detailed in our attached [policy document](./POLICY.md).
+Cosmos Labs' maintenance policy for the Cosmos Stack is detailed in:
+
+- Canonical release family lifecycle/support policy: [https://docs.cosmos.network/sdk/latest/release-family](https://docs.cosmos.network/sdk/latest/release-family)
+- Security repository policy and process references: [./POLICY.md](./POLICY.md)
 
 ### Bug Bounty
 
