@@ -21,7 +21,8 @@ A **Release Family** is defined as a specific combination of component versions.
 
 The canonical source of truth for release family lifecycle, active support windows, and retirement policy is maintained in Cosmos docs:
 
-- https://docs.cosmos.network/sdk/latest/release-family
+- [https://docs.cosmos.network/sdk/latest/release-family](https://docs.cosmos.network/sdk/latest/release-family)
+- [https://github.com/cosmos/docs/blob/main/sdk/latest/release-family.mdx](https://github.com/cosmos/docs/blob/main/sdk/latest/release-family.mdx)
 
 This file intentionally does not duplicate lifecycle timelines to avoid policy drift across multiple sources.
 
@@ -46,4 +47,6 @@ Please read our [security policy](./SECURITY.md) for a detailed breakdown of how
 
 Current and historical EOL notices for release families are maintained on the canonical Release Families page in Cosmos docs:
 
-- https://docs.cosmos.network/sdk/latest/release-family
+- [https://docs.cosmos.network/sdk/latest/release-family](https://docs.cosmos.network/sdk/latest/release-family)
+
+CometBFT v1.x is not supported. That release line was retracted and is not part of any supported release family.
