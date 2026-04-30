@@ -19,41 +19,12 @@ To achieve this, we are introducing the concept of **Release Families**, curated
 
 A **Release Family** is defined as a specific combination of component versions.
 
-Each release family is maintained for **one (1) year from the date it is introduced**.
+The canonical source of truth for release family lifecycle, active support windows, and retirement policy is maintained in Cosmos docs:
 
-As a general policy, Cosmos Labs intends to introduce **two release families per year**, which typically results in two active families at any given time. However, because each family is supported for one full year, there may be temporary periods where more than two families are active simultaneously.
+- [https://docs.cosmos.network/sdk/latest/release-family](https://docs.cosmos.network/sdk/latest/release-family)
+- [https://github.com/cosmos/docs/blob/main/sdk/latest/release-family.mdx](https://github.com/cosmos/docs/blob/main/sdk/latest/release-family.mdx)
 
-In the event that a new release family is not introduced on schedule, the support window for the most recent family will extend beyond one year until a successor family is formally released. We will not allow a gap in supported release families.
-
-### Current Family 1 *(older, maintained under 1-year lifecycle policy)*
-
-- CometBFT **v0.38.x**
-- Cosmos SDK **v0.50.x**
-- IBC **v8.x**
-
-### Current Family 2 *(newer, active)*
-
-- CometBFT **v0.38.x**
-- Cosmos SDK **v0.53.x**
-- IBC **v10.x**
-- Cosmos EVM **v0.5.x**
-
----
-
-## Future Family Evolution
-
-When a new family is introduced, it begins its own one-year maintenance window.
-
-Because families are supported for one year from release, the retirement of an older family is determined by its lifecycle timeline rather than strictly by the introduction of a new family. In practice, given our target cadence of two families per year, this will typically result in two active families at a time.
-
-### Planned Future Family
-
-- CometBFT **v0.39.x**
-- Cosmos SDK **v0.54.x**
-- IBC **v11.x**
-- Cosmos EVM **v0.6.x**
-
-Upon introduction of this family, it will enter its one-year maintenance window. The retirement date of older families will be determined based on their original release date and lifecycle timeline.
+This file intentionally does not duplicate lifecycle timelines to avoid policy drift across multiple sources.
 
 ---
 
@@ -61,8 +32,7 @@ Upon introduction of this family, it will enter its one-year maintenance window.
 
 - **Bug Fixes:** Critical security and stability issues are patched for all active families.
 - **Compatibility:** All components within a family are guaranteed to work together.
-- **Lifecycle:** Each family is supported for one year from release, subject to extension if a successor family has not yet been introduced.
-- **Retirement:** Once a family reaches the end of its lifecycle, it no longer receives patches or compatibility updates.
+- **Lifecycle and Retirement:** Maintained on the canonical Release Families page in Cosmos docs.
 - **Upgradability:** We guarantee an upgrade path from one release family to the next adjacent family in the form of clear guides, compatibility guarantees, and tooling for assistance.
 
 ---
@@ -73,18 +43,10 @@ Please read our [security policy](./SECURITY.md) for a detailed breakdown of how
 
 ---
 
-## Addendum: End of Life (EOL) Notices
+## End of Life (EOL) Notices
 
-The following releases were not covered under this Release Family policy, as it was not yet in place at the time of their lifecycle. However, they have had sufficient maintenance windows and will formally reach **End of Life (EOL) at the end of Q1 2026** with the release of our new Release Family:
+Current and historical EOL notices for release families are maintained on the canonical Release Families page in Cosmos docs:
 
-- **CometBFT v0.37.x and lower**
-- **ibc-go v0.7.x and lower**
-- **Cosmos SDK v0.50.x and lower**
+- [https://docs.cosmos.network/sdk/latest/release-family](https://docs.cosmos.network/sdk/latest/release-family)
 
-After the end of Q1 2026, these versions will no longer receive maintenance, security patches, or support from Cosmos Labs.
-
-Additionally:
-
-- **CometBFT v1.x** will not be supported. That release has been fully retracted and is not part of any supported release family.
-
-We strongly encourage all teams running affected versions to plan their upgrades accordingly.
+CometBFT v1.x is not supported. That release line was retracted and is not part of any supported release family.
