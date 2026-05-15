@@ -19,6 +19,4 @@ Additionally, the @security alias at [security@cosmoslabs.io](mailto:security@co
 
 ### Security Outreach
 
-You may have run across one of our advisories while working in the Cosmos Stack. To see a complete list of all public advisories, see [ADVISORIES.md](ADVISORIES.md).
-
-Our team will also post public resources about security topics in the [resources](./resources) folder.
+To sign up for private security disclosures, fill out this [form](https://forms.gle/7scaqTEmxXzXbpfR6).
