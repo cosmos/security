@@ -48,7 +48,7 @@ Emergency Security Coordination or Emergency Security Upgrades should be reserve
 
 ## Vulnerability Disclosure and Emergency Security Coordination
 
-If you believe that you have found a vulnerability in the Cosmos Stack or would like to contribute to the Cosmos Bug Bounty Program by reporting a bug, please see [https://hackerone.com/cosmos](https://hackerone.com/cosmos). This Severity Classification Framework is used to assess all vulnerabilities reported to the bug bounty program.
+If you believe that you have found a vulnerability in the Cosmos Stack or would like to contribute to the Cosmos Bug Bounty Program by reporting a bug, please see [https://immunefi.com/bug-bounty/cosmos](https://immunefi.com/bug-bounty/cosmos/information/). This Severity Classification Framework is used to assess all vulnerabilities reported to the bug bounty program.
 
 If you are building on the Cosmos Stack and want to ensure that your team is easy to contact in the event that you are impacted by a Critical security vulnerability, create a security contact email alias and include this information in a `security.md` in your main code repository.
 
