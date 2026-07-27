@@ -4,15 +4,15 @@
 
 ## Impact Scenarios Framework
 
-Our severity classifications are simply done by matching a security reports
+Our severity classifications are simply done by matching a security report's
 demonstrated, deterministic impact to a set of impacts that we care about most.
 Each of those listed impacts comes with a predetermined severity, available for
 all to see.
 
 This explicit listing of impacts and their predetermined severities is done to
-reduce subjectivity and increase transparency in our program. Helping security
+reduce subjectivity and increase transparency in our program, helping security
 researchers get paid out faster and know upfront how their security report will
-get classified.
+be classified.
 
 See the [Cosmos Program Immunefi Impacts in
 Scope](https://immunefi.com/bug-bounty/cosmos/scope/#top) section for more
@@ -21,18 +21,18 @@ details.
 ### Downgrade Scenarios
 
 While the impact scenarios framework aims to be as simple as possible and
-associate an on chain or off chain impact to a severity classification, it
-ignores another half of the equation, the likelihood of the impact occurring.
+associate an on-chain or off-chain impact to a severity classification, it
+ignores the other half of the equation, the likelihood of the impact occurring.
 Not all security reports of a single impact will always be as likely to happen,
 which must be taken into account to offer fair rewards when comparing two
 reports against each other.
 
 To take these variables into account, we have listed explicit scenarios that
-would downgrade the severity of a predefined impact. A non exhaustive set of
+would downgrade the severity of a predefined impact. A non-exhaustive set of
 downgrade scenarios may be:
-* for the impact to take place, it requires the malicious actor to be part of a permissioned set of users.
-* for the impact to take place, it requires a tight race condition to occur that the malicious actor cannot reliably control.
-* for the impact to take place, it requires some optional module to be enabled on an honest users chain. 
+* For the impact to take place, it requires the malicious actor to be part of a permissioned set of users.
+* For the impact to take place, it requires a tight race condition to occur that the malicious actor cannot reliably control.
+* For the impact to take place, it requires some optional module to be enabled on an honest user's chain.
 
 ## Guidance for Chain Developers and Validators
 
@@ -59,6 +59,6 @@ If you are a chain operator and you want to verify if Emergency Security Coordin
 ### Changelog
 
 - v1.3: Update severity classification framework from Impact vs Likelihood to explicit impact scenarios with severity downgrade conditions.
-- ACMv1.2: Change "Critical" imapct to "Considerable" to avoid confusion with Severity rating. The impact captured before and after this change is the same.
+- ACMv1.2: Change "Critical" impact to "Considerable" to avoid confusion with Severity rating. The impact captured before and after this change is the same.
 
 [Security Classification Matrix](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md) © 2024 by Amulet is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)
