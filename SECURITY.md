@@ -22,13 +22,10 @@ Cosmos SDK, CometBFT, IBC, and other core components—must be reported
 privately through the channels listed below.
 
 - **Preferred:** Submit reports through the
-  [Cosmos HackerOne Bug Bounty Program](https://hackerone.com/cosmos).
-- If HackerOne submission is not possible, reports may be sent to
-  `security@cosmoslabs.io` with sufficient technical detail, including
-  impact and reproduction steps.
+  [Cosmos Immunefi Bug Bounty Program](https://immunefi.com/bug-bounty/cosmos/information/).
 
 > Reports submitted via email are *not eligible* for bounty rewards.
-> Only reports submitted through HackerOne qualify for bounties.
+> Only reports submitted through the Bug Bounty qualify for bounties.
 
 Public disclosure of vulnerabilities (including GitHub issues, blog
 posts, or social media) is prohibited until Cosmos Labs has remediated
@@ -43,21 +40,21 @@ testing, and deployment of a fix prior to public release of details.
 
 ## Bug Bounty Program Overview
 
-Cosmos Labs operates a bug bounty program through **HackerOne**.
+Cosmos Labs operates a bug bounty program through **Immunefi**.
 Eligible reports are rewarded based on severity, impact, and quality.
 
 **In Scope:** Core Cosmos Stack components, including the Cosmos SDK,
 CometBFT, IBC, Cosmos EVM, and other critical infrastructure components.
 
 The authoritative scope definition, severity classifications, and
-reward ranges are maintained on the Cosmos
-[HackerOne program page](https://hackerone.com/cosmos).
+reward ranges are maintained on the [Cosmos Immunefi program
+page](https://immunefi.com/bug-bounty/cosmos/scope/#top).
 
-The program is governed by **Safe Harbor** provisions for good-faith
-research. The HackerOne page defines the applicable **Coordinated
-Vulnerability Disclosure Policy** and **Safe Harbor terms**.
+The program is governed by **Safe Harbor** provisions for good-faith research.
+The Immunefi page defines the applicable **Coordinated Vulnerability Disclosure
+Policy** and **Safe Harbor terms**.
 
-> In the event of conflict, the HackerOne policy supersedes all other
+> In the event of conflict, the Immunefi policy supersedes all other
 > documentation.
 
 ------------------------------------------------------------------------
@@ -67,16 +64,13 @@ Vulnerability Disclosure Policy** and **Safe Harbor terms**.
 Reported vulnerabilities are assigned a severity classification that
 determines handling priority and disclosure timing.
 
-| **Level**    | **Description**                                                              | **Examples**                                                                            |
-|--------------|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Critical** | Permanent and irrecoverable loss of fund                                     | Direct fund loss, unauthorized and unlimited token minting, irreversible theft of fund. |
-| **High**     | Severe impact affecting many nodes or users; often remotely exploitable.     | Remote crash or chain halt vulnerabilities.                                             |
-| **Medium**   | Limited or conditional impact; exploitation may require specific conditions. | Node halt requiring elevated permissions.                                               |
-| **Low**      | Minor impact or impractical exploitation scenarios.                          | Slow block propagation, limited denial-of-service.                                      |
-
-These classifications follow industry standards and inform response
-urgency and disclosure policy. Additional details are available in the
-[Classification Matrix](./resources/CLASSIFICATION_MATRIX.md).
+The definitions that define severity classification and the reward ranges that
+follow are maintained on our Immunefi page and not duplicated here. See the
+[Cosmos Immunefi program
+page](https://immunefi.com/bug-bounty/cosmos/scope/#top) Impacts in Scope
+section for further details, as well as our [classification
+framework](./resources/CLASSIFICATION_MATRIX.md) for details on our
+classification methodology.
 
 ------------------------------------------------------------------------
 
