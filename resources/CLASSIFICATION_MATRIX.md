@@ -1,118 +1,38 @@
 # Cosmos Stack Severity Classification Framework
 
-**Version**: ACMv1.2
+**Version**: v1.3
 
-## Criticality Matrix
+## Impact Scenarios Framework
 
-![./assets/crit_matrix.png](./assets/crit_matrix.png)
+Our severity classifications are simply done by matching a security reports
+demonstrated, deterministic impact to a set of impacts that we care about most.
+Each of those listed impacts comes with a predetermined severity, available for
+all to see.
 
-## Why Impact vs Likelihood
+This explicit listing of impacts and their predetermined severities is done to
+reduce subjectivity and increase transparency in our program. Helping security
+researchers get paid out faster and know upfront how their security report will
+get classified.
 
-Using a framework such as the Impact vs. Likelihood matrix to bucket risk into five main categories: critical, high, medium, low, and informational, is an efficient way to communicate relative risk to other parties.
+See the [Cosmos Program Immunefi Impacts in
+Scope](https://immunefi.com/bug-bounty/cosmos/scope/#top) section for more
+details.
 
-### Subjectivity and Contextualization
+### Downgrade Scenarios
 
-Unlike some complex risk assessment models, including CVSS, the Impact vs. Likelihood framework allows for a degree of subjectivity and contextualization. Engineers can tailor the assessment criteria to suit their specific needs and factors relevant to their operations. This flexibility enhances relevance and usefulness in various environments.
+While the impact scenarios framework aims to be as simple as possible and
+associate an on chain or off chain impact to a severity classification, it
+ignores another half of the equation, the likelihood of the impact occurring.
+Not all security reports of a single impact will always be as likely to happen,
+which must be taken into account to offer fair rewards when comparing two
+reports against each other.
 
-### Prioritization of Resources
-
-By classifying risks based on their impact and likelihood, teams can allocate resources to address the most critical risks first. This approach enables them to focus on mitigating potential high-impact, high-likelihood risks, thereby minimizing their overall risk exposure.
-
-### Quantitative and Qualitative
-
-An Impact vs. Likelihood framework can be used in quantitative and qualitative risk assessments. While some teams may assign numerical values to impact and likelihood, others may use descriptive scales (e.g., low, medium, high). This adaptability applies to various teams with varying risk management maturity levels.
-
-## Topics to consider when determining risk
-
-### Availability
-
-Evaluate the impact on the availability of the chain. Will the vulnerability lead to service disruptions, downtime, or denial of service? Consider the potential financial losses, reputational damage, and operational impacts of unavailable resources of the chain. Across the affected chains, how important is liveness to the affected groups?
-
-### Recoverability
-
-Analyze the ease and speed of recovery from exploiting the vulnerability. How quickly can the system or service be restored to regular operation? Assess the resources and efforts required for recovery and the impact on business continuity.
-
-### Confidentiality
-
-Determine if the vulnerability compromises sensitive information or data. Assess the potential damage if unauthorized parties gain access to sensitive data, including financial losses, legal consequences, and harm to customer trust. This area is less important in our space but may be critical for privacy-focused chains.
-
-### Integrity
-
-Consider the impact on data integrity if the vulnerability allows unauthorized modification or alteration of critical information. This may result in misinformation, data corruption, and potential legal or compliance issues.
-
-### Authentication and Authorization Bypass
-
-Evaluate if the vulnerability can lead to unauthorized access to privileged wallets or systems. Unauthorized access can enable attackers to gain control over critical assets or escalate their privileges, potentially leading to severe consequences.
-
-### Data Loss
-
-Determine if the vulnerability can result in data loss. Losing critical data can have significant financial, operational, and legal ramifications.
-
-### Exploitation Complexity
-
-Assess how difficult it is for an attacker to exploit the vulnerability. If the exploitation is straightforward, the risk is higher than a vulnerability requiring complex, sophisticated techniques. Does successful exploitation require governance or leave other noisy artifacts that could be detected?
-
-### Scope
-
-Consider the scope of the impact. Does the vulnerability affect a single system, multiple systems, or the entire chain or ecosystem?
-
-### Regulatory and Compliance
-
-Evaluate whether the vulnerability could result in non-compliance with relevant regulations or industry standards. Non-compliance may lead to penalties, legal actions, and reputational damage. Depending on the current regulatory environment, this may be more or less relevant (e.g., banned addresses, OFAC compliance, etc.)
-
-### Dependencies and Interconnections
-
-Examine the potential ripple effects of the vulnerability on interconnected systems or third-party services. One vulnerability could have cascading effects on various parts of the infrastructure. A good example is the ics23 bug, where the impact was very much inter-chain.
-
-### Patch Availability and Remediation Effort
-
-Consider the availability of patches or mitigations to address the vulnerability. If limiting the availability of a patch is required to limit impact, consider the effect on chains unable to patch and consider the tradeoffs. Additionally, the impact may be substantially more significant depending on the difficulty or complexity of patching this issue. Assess the effort and time required to remediate the issue effectively.
-
-### Threat Landscape
-
-Analyze the current threat landscape and whether known active exploits target the vulnerability. The presence of active exploits increases the urgency of addressing the issue.
-
-### Token Supply and Circulating Supply
-
-Vesting and locking mechanisms can affect the token supply and circulation. Locked tokens are typically excluded from the circulating supply, impacting metrics like market capitalization and token liquidity. A vulnerability in one of these mechanisms may adversely affect a chain's tokenomics implementation, leading to price fluctuations and shifts in market perception.
-
-### Mitigation mechanisms
-
-Investing in mechanisms, including a circuit breaker for specific APIs, may reduce the impact of vulnerabilities to all chains. This type of feature is immensely beneficial for systemic risk reduction. Does a mechanism exist today that chains know how to use that could mitigate this risk efficiently?
-
-## Real-world Examples
-
-- Critical
-
-  - Likely, Catastrophic impact
-  - Cross-chain impact and private, coordinated emergency patching required.
-  - Consequences of a critical issue are typically irreversible, e.g. loss of funds, trivial minting of funds.
-  - Examples include:
-    - [Dragonberry](https://forum.cosmos.network/t/ibc-security-advisory-dragonberry/7702)
-    - [ASA-2024-007](https://github.com/cosmos/ibc-go/security/advisories/GHSA-j496-crgh-34mx): Potential Reentrancy using Timeout Callbacks in `ibc-hooks`
-
-- High
-
-  - Possible likelihood, Considerable impact
-  - Somewhat cross-chain impact, with consequences that are difficult to recover from and likely to require state modification. These consequences could include non-determinism that results in a trivial chain halt or bugs that undermine the economic model of the Cosmos Stack.
-  - Examples include:
-    - [Pigeonfall](https://github.com/cosmos/ibc-apps/security/advisories/GHSA-q7m9-jcqg-g9pq): Packet Forward Middleware
-    - [ASA-2024-001](https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-2557-x9mg-76w8): Validation of `VoteExtensionsEnableHeight` can cause chain halt (CometBFT)
-
-- Medium
-
-  - Possible likelihood, Moderate impact
-  - Affects specific chains using the feature,with consequences that are recoverable and provide moderate disruption to chain availability. The consequences could include business logic errors or missing validation that interrupts chain operations and inconveniences users, but the issue may not have cross-chain impact.
-  - Examples include:
-    - [ASA-2024-002](https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-2557-x9mg-76w8): Default `PrepareProposalHandler` may produce invalid proposals when used with default `SenderNonceMempool` (Cosmos SDK)
-
-- Low
-  - Possible likelihood, Marginal impact
-  - Affects some chains using the feature, with consequences that can be recovered from without significantly disrupting chain availability. The consequences could include misconfigured chain invariants that impact chain performance in specific use cases or improper error handling.
-  - Examples include:
-    - [ASA-2023-002](https://github.com/cometbft/cometbft/security/advisories/GHSA-hq58-p9mv-338c): Default for BlockParams.MaxBytes consensus parameter may increase block times and affect consensus participation (CometBFT)
-    - [ASA-2024-005](https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-86h5-xcpx-cfqc): Potential slashing evasion during re-delegation (Cosmos SDK)
-    - Interchain Account Squatting
+To take these variables into account, we have listed explicit scenarios that
+would downgrade the severity of a predefined impact. A non exhaustive set of
+downgrade scenarios may be:
+* for the impact to take place, it requires the malicious actor to be part of a permissioned set of users.
+* for the impact to take place, it requires a tight race condition to occur that the malicious actor cannot reliably control.
+* for the impact to take place, it requires some optional module to be enabled on an honest users chain. 
 
 ## Guidance for Chain Developers and Validators
 
@@ -138,6 +58,7 @@ If you are a chain operator and you want to verify if Emergency Security Coordin
 
 ### Changelog
 
+- v1.3: Update severity classification framework from Impact vs Likelihood to explicit impact scenarios with severity downgrade conditions.
 - ACMv1.2: Change "Critical" imapct to "Considerable" to avoid confusion with Severity rating. The impact captured before and after this change is the same.
 
 [Security Classification Matrix](https://github.com/interchainio/security/blob/main/resources/CLASSIFICATION_MATRIX.md) © 2024 by Amulet is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)

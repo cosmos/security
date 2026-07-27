@@ -13,7 +13,7 @@ Cosmos Labs' maintenance policy for the Cosmos Stack is detailed in:
 
 ### Bug Bounty
 
-As part of our coordinated vulnerability disclosure policy, we offer a Safe Harbor to all security researchers who work with us in good faith. Please visit our Bug Bounty program at [https://hackerone.com/cosmos](https://hackerone.com/cosmos) to learn more, and to report any Security issues you may discover in the Cosmos Stack.
+As part of our coordinated vulnerability disclosure policy, we offer a Safe Harbor to all security researchers who work with us in good faith. Please visit our Bug Bounty program at [https://immunefi.com/bug-bounty/cosmos](https://immunefi.com/bug-bounty/cosmos/information/) to learn more, and to report any Security issues you may discover in the Cosmos Stack.
 
 Additionally, the @security alias at [security@cosmoslabs.io](mailto:security@cosmoslabs.io) is continuously monitored for security coordination.
 
