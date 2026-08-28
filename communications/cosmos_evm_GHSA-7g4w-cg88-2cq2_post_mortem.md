@@ -108,7 +108,7 @@ All times UTC.
 
 ### Exploit and Remediation
 
-The timeline below outlines and remediation for the first chains exploited, MANTRA, TAC, and KiiChain.
+The timeline below outlines exploit and remediation for the first chains exploited, MANTRA, TAC, and KiiChain.
 
 **2026-08-20**
 
