@@ -27,11 +27,13 @@ disclosure date, is served to every repository in the organization from
 
 ## Receiving patches privately
 
-Teams running the Cosmos Stack in production can be given security fixes before
-they are public. Access is granted per team and requires KYC.
-
-To be considered, fill out
+Teams running the Cosmos Stack in production can sign up for private security
+notifications by filling out
 [this form](https://forms.gle/7scaqTEmxXzXbpfR6).
+
+Signing up is the first step, not access itself. Receiving fixes before they are
+public additionally requires completing KYC, which is arranged by email with
+[security@cosmos.network](mailto:security@cosmos.network).
 
 ## Policies
 
@@ -54,7 +56,7 @@ copy. They are not duplicated here.
 | --- | --- |
 | [ADVISORIES.md](./ADVISORIES.md) | Every ASA advisory issued to date, linked to its GHSA |
 | [audits/](./audits) | Third-party audit reports, by component |
-| [communications/](./communications) | Pre-notifications and incident post mortems, with detached signatures |
+| [communications/](./communications) | Incident post mortems, and pre-notifications with their detached signatures |
 | [reports/](./reports) | Transparency reports |
 | [resources/](./resources) | Severity classification framework and liveness guidance |
 | [release/](./release) | Release signing keys |
