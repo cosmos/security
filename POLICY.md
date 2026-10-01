@@ -39,7 +39,7 @@ This file intentionally does not duplicate lifecycle timelines to avoid policy d
 
 ## Security Fix Process
 
-Please read our [security policy](./SECURITY.md) for a detailed breakdown of how bugs and vulnerabilities are to be handled for the Cosmos Stack.
+Please read our [security policy](https://github.com/cosmos/.github/blob/main/SECURITY.md) for a detailed breakdown of how bugs and vulnerabilities are to be handled for the Cosmos Stack.
 
 ---
 
