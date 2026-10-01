@@ -162,5 +162,7 @@ This report is provided for informational purposes only and does not constitute 
 
 ## Corrections 
 
-An earlier version of this report had incorrectly stated details of the PoC included in the first bug bounty submission that reported the underflow vulnerability. 
+An earlier version of this report had incorrectly stated details of the PoC included in the first bug bounty submission that reported the underflow vulnerability.
+
+The two references to the silent patch process previously linked the bug bounty page in the developer documentation. That page is generated from the security policy, which moved to the organization's community health files in September 2026 and no longer describes a silent patch process. Both references now link the revision of the policy that was in force during these events, so they continue to show the process as it stood at the time. The substance of the report is unchanged. 
 
