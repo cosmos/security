@@ -1,22 +1,66 @@
 # Cosmos Maintenance and Security
 
-This repository houses references, artifacts, policies and deliverables for maintenance and security of the Cosmos Stack.
+This repository holds the artifacts and references behind maintenance and
+security of the Cosmos Stack: published advisories, third-party audits, incident
+communications, the severity classification framework, and the release and
+maintenance policy.
 
-## Programs
+Vulnerabilities are not reported here. See below.
 
-### Maintenance
+## Reporting a vulnerability
 
-Cosmos Labs' maintenance policy for the Cosmos Stack is detailed in:
+Report through the
+[Cosmos Immunefi Bug Bounty Program](https://immunefi.com/bug-bounty/cosmos/information/).
+That is the only route eligible for a bounty.
 
-- Canonical release family lifecycle/support policy: [https://docs.cosmos.network/sdk/latest/release-family](https://docs.cosmos.network/sdk/latest/release-family)
-- Security repository policy and process references: [./POLICY.md](./POLICY.md)
+Never open a public issue, pull request, or discussion for a suspected
+vulnerability.
 
-### Bug Bounty
+[security@cosmos.network](mailto:security@cosmos.network) is monitored
+continuously for security coordination with chains and partners. Reports that
+arrive there are acted on, but they are not eligible for a bounty.
 
-As part of our coordinated vulnerability disclosure policy, we offer a Safe Harbor to all security researchers who work with us in good faith. Please visit our Bug Bounty program at [https://immunefi.com/bug-bounty/cosmos](https://immunefi.com/bug-bounty/cosmos/information/) to learn more, and to report any Security issues you may discover in the Cosmos Stack.
+The full policy, covering how reports are handled, how fixes are distributed,
+when details are disclosed, and what happens if someone publishes ahead of the
+disclosure date, is served to every repository in the organization from
+[cosmos/.github/SECURITY.md](https://github.com/cosmos/.github/blob/main/SECURITY.md).
 
-Additionally, the @security alias at [security@cosmos.network](mailto:security@cosmos.network) is continuously monitored for security coordination.
+## Receiving patches privately
 
-### Security Outreach
+Teams running the Cosmos Stack in production can be given security fixes before
+they are public. Access is granted per team and requires KYC.
 
-To sign up for private security disclosures, fill out this [form](https://forms.gle/7scaqTEmxXzXbpfR6).
+To be considered, fill out
+[this form](https://forms.gle/7scaqTEmxXzXbpfR6).
+
+## Policies
+
+| Policy | Where it lives |
+| --- | --- |
+| Vulnerability disclosure and bug bounty | [cosmos/.github/SECURITY.md](https://github.com/cosmos/.github/blob/main/SECURITY.md) |
+| Severity classification | [resources/CLASSIFICATION_MATRIX.md](./resources/CLASSIFICATION_MATRIX.md) |
+| Release families, support windows, retirement | [docs.cosmos.network](https://docs.cosmos.network/sdk/latest/release-family) |
+| Release and maintenance | [POLICY.md](./POLICY.md) |
+| Code of Conduct | [cosmos/.github/CODE_OF_CONDUCT.md](https://github.com/cosmos/.github/blob/main/CODE_OF_CONDUCT.md) |
+| Contributing | [cosmos/.github/CONTRIBUTING.md](https://github.com/cosmos/.github/blob/main/CONTRIBUTING.md) |
+
+The disclosure policy, code of conduct, and contributing guide live in
+`cosmos/.github` so that every repository in the organization serves the same
+copy. They are not duplicated here.
+
+## What is in this repository
+
+| Path | Contents |
+| --- | --- |
+| [ADVISORIES.md](./ADVISORIES.md) | Every ASA advisory issued to date, linked to its GHSA |
+| [audits/](./audits) | Third-party audit reports, by component |
+| [communications/](./communications) | Pre-notifications and incident post mortems, with detached signatures |
+| [reports/](./reports) | Transparency reports |
+| [resources/](./resources) | Severity classification framework and liveness guidance |
+| [release/](./release) | Release signing keys |
+
+## A note on liveness
+
+The Cosmos Stack is built on safety over liveness and does not offer distributed
+performance guarantees. [resources/LIVENESS.md](./resources/LIVENESS.md) sets out
+what that means for anyone building on it.
